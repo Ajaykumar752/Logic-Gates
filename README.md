@@ -14,7 +14,6 @@ The objective of this project is to understand the working principles of basic l
 - **Design Type:** Digital Logic Design
 
 ## 📂 Repository Structure
-## 📂 Repository Structure
 
 ```text
 Logic-Gates/
