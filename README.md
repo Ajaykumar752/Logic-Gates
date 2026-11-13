@@ -14,27 +14,25 @@ The objective of this project is to understand the working principles of basic l
 - **Design Type:** Digital Logic Design
 
 ## 📂 Repository Structure
+## 📂 Repository Structure
 
+```text
 Logic-Gates/
-│
 ├── AND-Gate/
 │   ├── and_gate.v
 │   ├── and_gate_tb.v
 │   ├── and_gate_schematic.png
 │   └── and_gate_waveform.png
-│
 ├── OR-Gate/
 │   ├── or_gate.v
 │   ├── or_gate_tb.v
 │   ├── or_gate_schematic.png
 │   └── or_gate_waveform.png
-│
 ├── NOT-Gate/
 │   ├── not_gate.v
 │   ├── not_gate_tb.v
 │   ├── not_gate_schematic.png
 │   └── not_gate_waveform.png
-│
 ├── Universal-Gates/
 │   ├── README.md
 │   ├── NAND-Gate/
@@ -47,20 +45,18 @@ Logic-Gates/
 │       ├── nor_gate_tb.v
 │       ├── nor_gate_schematic.png
 │       └── nor_gate_waveform.png
-│
 ├── XNOR-Gate/
 │   ├── xnor_gate.v
 │   ├── xnor_gate_tb.v
 │   ├── xnor_gate_schematic.png
 │   └── xnor_gate_waveform.png
-│
 ├── XOR-Gate/
 │   ├── xor_gate.v
 │   ├── xor_gate_tb.v
 │   ├── xor_gate_schematic.png
 │   └── xor_gate_waveform.png
-│
 └── README.md
+```
 
 ## 1. AND Gate
 
