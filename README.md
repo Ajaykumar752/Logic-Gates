@@ -15,7 +15,6 @@ The objective of this project is to understand the working principles of basic l
 
 ## 📂 Repository Structure
 
-```text
 Logic-Gates/
 │
 ├── AND-Gate/
@@ -36,8 +35,32 @@ Logic-Gates/
 │   ├── not_gate_schematic.png
 │   └── not_gate_waveform.png
 │
+├── Universal-Gates/
+│   ├── README.md
+│   ├── NAND-Gate/
+│   │   ├── nand_gate.v
+│   │   ├── nand_gate_tb.v
+│   │   ├── nand_gate_schematic.png
+│   │   └── nand_gate_waveform.png
+│   └── NOR-Gate/
+│       ├── nor_gate.v
+│       ├── nor_gate_tb.v
+│       ├── nor_gate_schematic.png
+│       └── nor_gate_waveform.png
+│
+├── XNOR-Gate/
+│   ├── xnor_gate.v
+│   ├── xnor_gate_tb.v
+│   ├── xnor_gate_schematic.png
+│   └── xnor_gate_waveform.png
+│
+├── XOR-Gate/
+│   ├── xor_gate.v
+│   ├── xor_gate_tb.v
+│   ├── xor_gate_schematic.png
+│   └── xor_gate_waveform.png
+│
 └── README.md
-```
 
 ## 1. AND Gate
 
@@ -111,6 +134,118 @@ A NOT gate is also known as an inverter. It produces the complement of its input
 
 ### Simulation Waveform
 ![NOT Gate Waveform](NOT-Gate/not_gate_waveform.png)
+
+## 4. NAND Gate
+
+A NAND gate produces the opposite output of an AND gate. Its output is LOW (0) only when both inputs are HIGH (1).
+
+**Boolean Expression:** `Y = ~(A & B)`
+
+### Truth Table
+
+| A | B | Y |
+|---|---|---|
+| 0 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+### Design Files
+
+- [Verilog Code](Universal-Gates/NAND-Gate/nand_gate.v)
+- [Testbench](Universal-Gates/NAND-Gate/nand_gate_tb.v)
+
+### Circuit Schematic
+
+![NAND Gate Schematic](Universal-Gates/NAND-Gate/nand_gate_schematic.png)
+
+### Simulation Waveform
+
+![NAND Gate Waveform](Universal-Gates/NAND-Gate/nand_gate_waveform.png)
+
+## 5. NOR Gate
+
+A NOR gate produces the opposite output of an OR gate. Its output is HIGH (1) only when both inputs are LOW (0).
+
+**Boolean Expression:** `Y = ~(A | B)`
+
+### Truth Table
+
+| A | B | Y |
+|---|---|---|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 0 |
+
+### Design Files
+
+- [Verilog Code](Universal-Gates/NOR-Gate/nor_gate.v)
+- [Testbench](Universal-Gates/NOR-Gate/nor_gate_tb.v)
+
+### Circuit Schematic
+
+![NOR Gate Schematic](Universal-Gates/NOR-Gate/nor_gate_schematic.png)
+
+### Simulation Waveform
+
+![NOR Gate Waveform](Universal-Gates/NOR-Gate/nor_gate_waveform.png)
+
+## 6. XNOR Gate
+
+An XNOR gate produces HIGH output (1) when both inputs are the same.
+
+**Boolean Expression:** `Y = ~(A ^ B)`
+
+### Truth Table
+
+| A | B | Y |
+|---|---|---|
+| 0 | 0 | 1 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+### Design Files
+
+- [Verilog Code](XNOR-Gate/xnor_gate.v)
+- [Testbench](XNOR-Gate/xnor_gate_tb.v)
+
+### Circuit Schematic
+
+![XNOR Gate Schematic](XNOR-Gate/xnor_gate_schematic.png)
+
+### Simulation Waveform
+
+![XNOR Gate Waveform](XNOR-Gate/xnor_gate_waveform.png)
+
+## 7. XOR Gate
+
+An XOR gate produces HIGH output (1) when the two inputs are different.
+
+**Boolean Expression:** `Y = A ^ B`
+
+### Truth Table
+
+| A | B | Y |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+### Design Files
+
+- [Verilog Code](XOR-Gate/xor_gate.v)
+- [Testbench](XOR-Gate/xor_gate_tb.v)
+
+### Circuit Schematic
+
+![XOR Gate Schematic](XOR-Gate/xor_gate_schematic.png)
+
+### Simulation Waveform
+
+![XOR Gate Waveform](XOR-Gate/xor_gate_waveform.png)
 
 ## 🎯 Learning Outcomes
 
